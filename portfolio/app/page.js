@@ -1,11 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
-const Laptop = dynamic(() => import("./components/3d-laptop"), { ssr: false });
-
 export default function Home() {
   return (
+    <head>
+      
     <div className="font-[family-name:var(--font-geist-sans)] bg-slate-800 text-white pointer-events-none">
       <main className="flex flex-col gap-4 min-h-screen justify-center items-center">
         <div className="flex flex-row gap-72">
